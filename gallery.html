@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - The Crafted Aura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght:700;900&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>THE CRAFTED AURA</h1>
+                <p class="tagline">Designed with Heart, Made by Hand</p>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="contact-info">
+                <a href="tel:3105292638" class="phone-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    310-529-2638
+                </a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="tel:3105292638" class="mobile-phone">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            310-529-2638
+        </a>
+    </div>
+
+    <!-- Gallery Header -->
+    <section class="gallery-header">
+        <div class="container">
+            <h1 class="page-title">Our Collections</h1>
+            <p class="page-subtitle">Explore our handcrafted artworks across three unique mediums</p>
+        </div>
+    </section>
+
+    <!-- Filter Navigation -->
+    <div class="filter-nav">
+        <div class="container">
+            <button class="filter-btn active" data-filter="all">All Collections</button>
+            <button class="filter-btn" data-filter="jewelry">Paper Quilling Jewelry</button>
+            <button class="filter-btn" data-filter="paintings">Paintings & Illustrations</button>
+            <button class="filter-btn" data-filter="textiles">Textile Crafts</button>
+        </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            
+            <!-- Paper Quilling Jewelry -->
+            <div id="jewelry" class="gallery-category">
+                <h2 class="category-title">Paper Quilling Jewelry</h2>
+                <p class="category-description">Intricate handcrafted jewelry featuring vibrant paper quilling techniques</p>
+                
+                <div class="gallery-grid" data-category="jewelry">
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-content">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M12 6v6l4 2"/>
+                                    </svg>
+                                    <p>Jewelry<br>800x800px</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Vibrant Peacock Set</h3>
+                            <p>Necklace & earrings in teal, purple, and green</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-content">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M12 6v6l4 2"/>
+                                    </svg>
+                                    <p>Jewelry<br>800x800px</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Sunset Swirl Necklace</h3>
+                            <p>Bold reds, oranges, and yellows</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-content">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M12 6v6l4 2"/>
+                                    </svg>
+                                    <p>Jewelry<br>800x800px</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Pastel Dreams Set</h3>
+                            <p>Coral, mint, and lavender matching set</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-content">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M12 6v6l4 2"/>
+                                    </svg>
+                                    <p>Jewelry<br>800x800px</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Butterfly Wings Earrings</h3>
+                            <p>Rainbow gradient paper quilling</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-content">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M12 6v6l4 2"/>
+                                    </svg>
+                                    <p>Jewelry<br>800x800px</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Ocean Waves Pendant</h3>
+                            <p>Blue and white swirl design</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-content">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M12 6v6l4 2"/>
+                                    </svg>
+                                    <p>Jewelry<br>800x800px</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Floral Bloom Earrings</h3>
+                            <p>Pink and yellow flower design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paintings & Illustrations -->
+            <div id="paintings" class="gallery-category">
+                <h2 class="category-title">Paintings & Illustrations</h2>
+                <p class="category-description">Bold and expressive artwork with vibrant colors and dynamic compositions</p>
+                
+                <div class="gallery-grid" data-category="paintings">
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-content">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                    <p>Painting<br>800x800px</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Crimson Dreams</h3>
+                            <p>Abstract expressionism in red and turquoise</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-content">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                    <p>Painting<br>800x800px</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Botanical Bliss</h3>
+                            <p>Watercolor illustration with vivid florals</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-content">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                    <p>Painting<br>800x800px</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Electric Nights</h3>
+                            <p>Modern abstract in purple and pink</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-content">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                    <p>Painting<br>800x800px</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Golden Hour</h3>
+                            <p>Textured impasto with gold accents</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-content">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                    <p>Painting<br>800x800px</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Ocean Depths</h3>
+                            <p>Fluid art in blues and greens</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-content">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                    <p>Painting<br>800x800px</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Sunset Symphony</h3>
+                            <p>Vibrant landscape in warm tones</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Textile Crafts -->
+            <div id="textiles" class="gallery-category">
+                <h2 class="category-title">Textile Crafts</h2>
+                <p class="category-description">Intricate embroidery and handcrafted fabric art with meticulous detail</p>
+                
+                <div class="gallery-grid" data-category="textiles">
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-content">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                    </svg>
+                                    <p>Textile<br>800x800px</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Paisley Paradise Cushion</h3>
+                            <p>Jewel-toned embroidery on cream fabric</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-content">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                    </svg>
+                                    <p>Textile<br>800x800px</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Floral Burst Embroidery</h3>
+                            <p>Vibrant hand-stitched floral design</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-content">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                    </svg>
+                                    <p>Textile<br>800x800px</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Geometric Knit Throw</h3>
+                            <p>Color-block pattern in bold wool</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-content">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                    </svg>
+                                    <p>Textile<br>800x800px</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Tribal Wall Art</h3>
+                            <p>Abstract geometric embroidery</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-content">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                    </svg>
+                                    <p>Textile<br>800x800px</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Mandala Meditation Piece</h3>
+                            <p>Intricate circular embroidery pattern</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="item-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-content">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                    </svg>
+                                    <p>Textile<br>800x800px</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Rainbow Boho Runner</h3>
+                            <p>Multi-colored table runner with tassels</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Love What You See?</h2>
+            <p>Contact us to purchase or inquire about custom orders</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                <a href="tel:3105292638" class="btn btn-secondary">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Crafted Aura</h3>
+                    <p>Designed with Heart, Made by Hand</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <a href="tel:3105292638">310-529-2638</a>
+                    <a href="mailto:info@thecraftedaura.com">info@thecraftedaura.com</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Pinterest">Pinterest</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Crafted Aura. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>

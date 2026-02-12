@@ -1,0 +1,273 @@
+/* ===== ABOUT PAGE STYLES ===== */
+
+.about-header {
+    padding: 5rem 2rem 3rem;
+    text-align: center;
+    background: var(--gradient-1);
+}
+
+/* Story Section */
+.story-section {
+    padding: 6rem 0;
+    background: var(--white);
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.story-text h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    background: var(--gradient-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.story-text p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--dark-text);
+    opacity: 0.9;
+}
+
+.story-image {
+    animation: fadeInRight 0.8s ease;
+}
+
+/* Process Section */
+.process-section {
+    padding: 6rem 0;
+    background: var(--light-bg);
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.process-card {
+    background: var(--white);
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    position: relative;
+    animation: fadeInUp 0.8s ease;
+}
+
+.process-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.process-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.process-card:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.process-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.process-number {
+    font-size: 3.5rem;
+    font-weight: 900;
+    background: var(--gradient-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.process-card h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    color: var(--primary-purple);
+}
+
+.process-card p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--dark-text);
+    opacity: 0.85;
+}
+
+/* Values Section */
+.values-section {
+    padding: 6rem 0;
+    background: var(--gradient-1);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.value-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.8s ease;
+}
+
+.value-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.value-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.value-card:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.value-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.value-card h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    color: var(--primary-purple);
+}
+
+.value-card p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--dark-text);
+    opacity: 0.85;
+}
+
+/* Techniques Section */
+.techniques-section {
+    padding: 6rem 0;
+    background: var(--white);
+}
+
+.techniques-content {
+    margin-top: 4rem;
+}
+
+.technique-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 5rem;
+    animation: fadeInUp 0.8s ease;
+}
+
+.technique-item:last-child {
+    margin-bottom: 0;
+}
+
+.technique-item.reverse {
+    direction: rtl;
+}
+
+.technique-item.reverse .technique-info {
+    direction: ltr;
+}
+
+.technique-image {
+    width: 100%;
+}
+
+.technique-info h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-purple);
+}
+
+.technique-info p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--dark-text);
+    opacity: 0.9;
+}
+
+/* Responsive About Page */
+@media (max-width: 1024px) {
+    .story-content,
+    .technique-item {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .technique-item.reverse {
+        direction: ltr;
+    }
+    
+    .story-text h2,
+    .technique-info h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-header {
+        padding: 4rem 1.5rem 2rem;
+    }
+    
+    .story-section,
+    .process-section,
+    .values-section,
+    .techniques-section {
+        padding: 4rem 0;
+    }
+    
+    .story-text h2 {
+        font-size: 2rem;
+    }
+    
+    .story-text p,
+    .technique-info p {
+        font-size: 1.05rem;
+    }
+    
+    .process-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .technique-info h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .process-number {
+        font-size: 2.5rem;
+    }
+    
+    .process-card h3,
+    .value-card h3 {
+        font-size: 1.4rem;
+    }
+}
