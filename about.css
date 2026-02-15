@@ -40,6 +40,14 @@
     animation: fadeInRight 0.8s ease;
 }
 
+.story-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+    object-fit: cover;
+}
+
 /* Process Section */
 .process-section {
     padding: 6rem 0;
@@ -196,6 +204,14 @@
 
 .technique-image {
     width: 100%;
+}
+
+.technique-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: var(--shadow-md);
+    object-fit: cover;
 }
 
 .technique-info h3 {
